@@ -1,0 +1,241 @@
+/* General Styles */
+.conatainerSkill {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftSkillDiv {
+    width: 50%;
+    background-image: url('../../public/images/left_bg.png');
+    background-size: cover; /* Ensure the background image covers the div */
+    background-position: center;
+    height: 100%;
+    position: relative;
+}
+
+.innerLeftDiv {
+    padding-left: 150px;
+    padding-top: 40px;
+}
+
+.rightSkillDiv {
+    width: 50%;
+    background-image: url('../../public/images/about_dot_bg.png');
+    background-size: cover; /* Ensure the background image covers the div */
+    background-position: center;
+    height: 100%;
+    position: relative;
+}
+
+.rightInnerDivSkill {
+    padding: 70px;
+    width: 100%;
+    padding-bottom: 150px;
+}
+
+.rightSkillDiv img {
+    width: 100%; /* Ensure the image spans the entire div */
+    height: 100%; /* Make the height fill the div */
+    object-fit: cover; /* Ensures the image doesn't stretch and maintains its aspect ratio */
+}
+
+.skillHeading {
+    color: var(--primary_color);
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.languagealistDiv {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 15px;
+}
+
+.languagealist {
+    width: 90px;
+    height: 90px;
+    margin: 0px 10px 25px 0px;
+    border: 10px solid rgba(61, 152, 157, 0.2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.languageSpan {
+    background: linear-gradient(200deg, #138086 0%, #062628 100%);
+    border-radius: 50%;
+    color: var(--accent_color);
+    font-family: var(--secondary_font);
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.framelistDiv {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-left: 0px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.frameList {
+    width: 90px;
+    height: 90px;
+}
+
+.frameCard {
+    font-family: var(--secondary_font);
+    font-size: 18px;
+    font-weight: 600;
+    color: #062628;
+    margin: 0px 5px 5px 0px;
+    padding: 18px;
+    border-radius: 6px;
+    border: 5px solid rgba(161, 204, 207, 0.50);
+    background: rgba(199, 223, 225, 0.4);
+}
+
+.dbDivs {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Skill heading under databases and dev tools */
+.skillHeadingvs {
+    color: var(--primary_color);
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+/* Responsive Design: Media Queries */
+
+/* For devices smaller than 768px (phones) */
+@media only screen and (max-width: 768px) {
+    .conatainerSkill {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .leftSkillDiv {
+        width: 100%;
+        background-size: contain;
+        padding: 20px;
+    }
+
+    .innerLeftDiv {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .rightSkillDiv {
+        width: 100%;
+        background-size: contain;
+        padding: 20px;
+    }
+
+    .rightInnerDivSkill {
+        padding: 20px;
+        padding-bottom: 50px;
+    }
+
+    .rightSkillDiv img {
+        width: 100%;
+        height: auto;
+    }
+
+    .languagealistDiv,
+    .framelistDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .languagealist {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 15px;
+    }
+
+    .frameList {
+        width: 70px;
+        height: 70px;
+    }
+
+    .frameCard {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .skillHeading {
+        font-size: 20px;
+    }
+
+    .skillHeadingvs {
+        font-size: 20px;
+    }
+}
+
+/* For devices smaller than 1024px (tablets) */
+@media only screen and (max-width: 1024px) {
+    .conatainerSkill {
+        flex-direction: column;
+    }
+
+    .leftSkillDiv,
+    .rightSkillDiv {
+        width: 100%;
+    }
+
+    .innerLeftDiv {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .rightInnerDivSkill {
+        padding: 30px;
+    }
+
+    .rightSkillDiv img {
+        width: 100%;
+        height: auto;
+    }
+
+    .languagealistDiv,
+    .framelistDiv {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .languagealist,
+    .frameList {
+        width: 80px;
+        height: 80px;
+    }
+
+    .frameCard {
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    .skillHeading {
+        font-size: 22px;
+    }
+
+    .skillHeadingvs {
+        font-size: 22px;
+    }
+}

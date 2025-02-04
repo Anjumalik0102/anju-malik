@@ -1,0 +1,154 @@
+/* General Styles */
+.conatainerAbout {
+    width: 100%;
+    background-image: url('../../public/images/about_dot_bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    display: flex;
+    flex-direction: row;
+}
+
+.leftDivAbout {
+    width: 50%;
+    padding-left: 80px;
+    padding-top: 10px;
+}
+
+.leftInnerDivAbt {
+    width: 100%;
+    height: 100vh;
+}
+
+.leftDivAbout img {
+    width: 100%;
+    height: 85vh;
+    object-fit: cover; /* Ensures the image covers the div without stretching */
+}
+
+.rightDivAbout {
+    width: 50%;
+    margin-left: 40px;
+}
+
+.rightInnerAbt {
+    padding: 20px;
+}
+
+.aboutHeading {
+    color: var(--primary_color);
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.abtPara {
+    font-family: var(--primary_font);
+    line-height: var(--bs-body-line-height);
+    color: var(--text_color);
+    margin-bottom: 10px;
+}
+
+.abtParaMin {
+    color: var(--primary_color);
+    padding-left: 24px;
+    font-size: 16px;
+    font-family: var(--primary_font);
+    line-height: var(--bs-body-line-height);
+    margin-bottom: 10px;
+}
+
+.cgpa {
+    font-family: var(--primary_font);
+    font-size: 16px;
+    padding-left: 20px;
+    color: var(--secondary_color);
+}
+
+/* Responsive Design: Media Queries */
+
+/* For devices smaller than 768px (phones) */
+@media only screen and (max-width: 768px) {
+    .conatainerAbout {
+        margin-top: 300px;
+        flex-direction: column;
+       
+    }
+
+    .leftDivAbout {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .leftDivAbout img {
+        width:70%;
+       /* Reduced image height to ensure it doesn't overlap the content */
+    }
+
+    .rightDivAbout {
+        width: 100%;
+       height: 80vh;
+    }
+
+    .aboutHeading {
+        font-size: 20px;
+    }
+
+    .abtPara,
+    .abtParaMin {
+        font-size: 14px;
+    }
+
+    .abtParaMin {
+        padding-left: 25px;
+    }
+
+    .cgpa {
+        font-size: 14px;
+    }
+}
+
+/* For devices smaller than 1024px (tablets) */
+@media only screen and (max-width: 1024px) {
+    .conatainerAbout {
+        margin-top: 350px;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .leftDivAbout {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .leftDivAbout img {
+        width: 100%;
+        height: 70vh; /* Reduced the height for tablets to prevent image overlap */
+    }
+
+    .rightDivAbout {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .aboutHeading {
+        font-size: 22px;
+    }
+
+    .abtPara,
+    .abtParaMin {
+        font-size: 15px;
+    }
+
+    .abtParaMin {
+        padding-left: 22px;
+    }
+
+    .cgpa {
+        font-size: 15px;
+    }
+}

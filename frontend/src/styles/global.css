@@ -1,0 +1,21 @@
+:root {
+    --primary_font: 'Poppins', sans-serif;
+    --secondary_font: 'Roboto', sans-serif;
+    --primary_color: #42999E;
+    --secondary_color: #184042;
+    --accent_color: #E7F2F3;
+    --text_color: #6C6C6C;
+    --default_color: #FFFFFF;
+    --primary_bg_color: rgba(231, 242, 243, 0.25);
+    --bs-body-font-size: 1.1rem;
+    --bs-body-font-weight: 600;
+    --bs-body-line-height: 1.5;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }

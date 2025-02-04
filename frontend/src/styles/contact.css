@@ -1,0 +1,132 @@
+/* General Styles */
+.conatainerContact {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url('../../public/images/left_bg.png');
+    background-size: cover; /* Ensure the background covers the screen */
+    background-position: center;
+    height: 100vh;
+}
+
+.contactCard {
+    width: 40%;
+    padding: 25px 20px;
+    height: 100%;
+    border-radius: 6px;
+    border: 1px solid rgba(161, 204, 207, 0.50);
+    background: rgba(231, 242, 243, 0.40);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contactCardHead {
+    color: var(--primary_color);
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 26px;
+    font-family: var(--primary_font);
+    margin-bottom: 1rem;
+}
+
+.inputField {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 14px;
+    background: var(--default_color);
+    color: rgba(108, 108, 108, 0.75) !important;
+    font-family: var(--secondary_font);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 14px 16px;
+    border: 1px solid var(--primary_border);
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 24px 0px rgba(19, 128, 134, 0.07);
+    border-radius: .375rem;
+    line-height: 1.4;
+}
+
+.btnContact {
+    width: 100%;
+    font-size: 14px;
+    padding: 7px 30px 6px;
+    color: var(--accent_color);
+    font-family: var(--secondary_font);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 100px;
+    background: var(--secondary_color);
+    padding: 10px 40px 9px;
+    border: 1px solid var(--secondary_color);
+    transition: 0.4s all;
+    position: relative;
+}
+
+.btnContact:hover {
+    background: var(--primary_color);
+    border: 1px solid var(--primary_color);
+}
+
+/* Responsive Design: Media Queries */
+
+/* For devices smaller than 768px (phones) */
+@media only screen and (max-width: 768px) {
+    .conatainerContact {
+        margin-top:500px ;
+       padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .contactCard {
+        width: 90%; /* Increased width to make form fill the screen */
+        padding: 40px;
+        margin: 0 auto; /* Center the form on the screen */
+    }
+
+    .contactCardHead {
+        font-size: 24px;
+        margin-bottom: 1rem;
+    }
+
+    .inputField {
+        font-size: 14px;
+        padding: 18px 14px;
+        margin-bottom: 18px; /* Reduced space between inputs */
+    }
+
+    .btnContact {
+        font-size: 14px;
+        padding: 8px 30px;
+    }
+}
+
+/* For devices smaller than 1024px (tablets) */
+@media only screen and (max-width: 1024px) {
+    .conatainerContact {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .contactCard {
+        width: 75%; /* Increased width to make the form take up more space on tablets */
+        padding: 30px 40px;
+        margin: 0 auto;
+    }
+
+    .contactCardHead {
+        font-size: 28px;
+    }
+
+    .inputField {
+        font-size: 15px;
+        padding: 14px 16px;
+        margin-bottom: 20px;
+    }
+
+    .btnContact {
+        font-size: 15px;
+        padding: 9px 35px;
+    }
+}

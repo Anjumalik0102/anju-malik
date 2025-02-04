@@ -1,0 +1,177 @@
+.mainfooterdiv {
+    background: var(--secondary_color);
+}
+
+.conatainerFooter {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 80px 0px 50px;
+    color: var(--accent_color);
+}
+
+.leftFooter {
+    width: 30%;
+    padding: 30px;
+    border: 1px solid rgba(92, 126, 130, 0.25);
+    border-radius: 6px;
+    margin-right: 50px;
+    margin-left: 150px;
+}
+
+.leftFooterPara {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: var(--secondary_font);
+    line-height: var(--bs-body-line-height);
+}
+
+.contactFooter {
+    width: 40%;
+    padding-left: 60px;
+}
+
+.footerheading {
+    margin-bottom: 20px;
+    color: var(--primary_color);
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: var(--primary_font);
+}
+
+.listFooter {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.teleList {
+    margin-bottom: 1rem !important;
+    font-size: 16px;
+    color: var(--accent_color);
+    font-family: var(--secondary_font);
+    font-weight: 400;
+}
+
+.socialMediaDiv {
+    width: 30%;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: row;
+}
+
+.socialIcon {
+    font-size: 24px;
+    margin-left: 10px;
+    color: var(--accent_color);
+}
+
+.socialIconLink {
+    color: aliceblue;
+}
+
+.conatctIcon {
+    margin-right: 5px;
+}
+
+.logoFooter img {
+    width: 150px;
+    height: 35px;
+}
+
+/* Responsive Styles for Tablet and Phone */
+@media (max-width: 1024px) {
+    .conatainerFooter {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .leftFooter,
+    .contactFooter,
+    .socialMediaDiv {
+        width: 100%;
+        margin: 20px 0;
+        padding: 10;
+    }
+
+    .leftFooter {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contactFooter {
+        padding-left: 0;
+    }
+
+    .socialMedia {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .conatainerFooter {
+        padding: 30px 10px;
+    }
+
+    .leftFooter,
+    .contactFooter {
+        width: 100%;
+        margin: 15px 0;
+        padding: 10;
+    }
+    .socialMediaDiv{
+         display:flex;
+         justify-content: left;
+    }
+
+    .footerheading {
+        font-size: 20px;
+    }
+
+    .teleList {
+        font-size: 14px;
+    }
+
+    .socialIcon {
+        padding-top: 20px;
+        font-size: 20px;
+    }
+
+    .logoFooter img {
+        width: 120px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .conatainerFooter {
+        padding: 20px 5px;
+    }
+
+    .leftFooter,
+    .contactFooter,
+    .socialMediaDiv {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .footerheading {
+        font-size: 18px;
+    }
+
+    .teleList {
+        font-size: 12px;
+    }
+
+    .socialIcon {
+        font-size: 18px;
+    }
+
+    .logoFooter img {
+        width: 100px;
+        height: 24px;
+    }
+}
