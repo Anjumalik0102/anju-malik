@@ -20,7 +20,6 @@ router.post('/sendmessage', async (req, res) => {
         const currentDate = new Date();
         const message = new Message({
             ...messageData,
-            date: currentDate  // Add date if not provided
         });
         await message.save();
 
