@@ -144,7 +144,7 @@ router.post('/sendmessage', async (req, res) => {
         res.status(200).send({ message: "Messages delivered successfully and confirmation sent to the sender!" });
     } catch (error) {
         console.log(error);
-        res.status(500).send({ message: "Network error" });
+        res.status(500).send({ message: error.message });
     }
 });
 
