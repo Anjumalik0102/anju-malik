@@ -112,7 +112,6 @@ router.post('/sendmessage', async (req, res) => {
             subject: 'Portfolio message', // Email subject
             html: emailHTMLToOwner, // HTML content to you
         };
-
         // Send the email to the sender (confirmation)
         const mailOptionsToSender = {
             from: process.env.GMAIL_USER, // Sender address
@@ -120,6 +119,7 @@ router.post('/sendmessage', async (req, res) => {
             subject: 'Thank You for Contacting Us', // Subject for the confirmation email
             html: emailHTMLToSender, // HTML content to the sender
         };
+console.log(mailOptionsToOwner,mailOptionsToSender)
 
         // Send both emails: to owner and sender
         transporter.sendMail(mailOptionsToOwner, (error, info) => {
