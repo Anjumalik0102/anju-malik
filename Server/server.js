@@ -6,7 +6,7 @@ const app = express();
 const router = require("./router/auth.router");
 const connectDb = require('./utils/db');
 app.use(cors())
-// app.use(express.json())
+app.use(express.json())
 // app.use(express.static(path.join(__dirname, 'build')));
 
 // // For all routes, send the index.html file to support React routing (if applicable)
