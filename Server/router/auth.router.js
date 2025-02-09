@@ -119,7 +119,7 @@ router.post('/sendmessage', async (req, res) => {
             subject: 'Thank You for Contacting Us', // Subject for the confirmation email
             html: emailHTMLToSender, // HTML content to the sender
         };
-console.log(mailOptionsToOwner,mailOptionsToSender)
+
 
         // Send both emails: to owner and sender
         transporter.sendMail(mailOptionsToOwner, (error, info) => {
