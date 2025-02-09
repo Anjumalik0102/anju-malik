@@ -53,7 +53,7 @@ const Contact = () => {
         };
     
         try {
-          const response = await fetch('http://localhost:3000/api/auth/sendmessage', {
+          const response = await fetch('https://anju-malik-api-git-main-anjus-projects-cd603313.vercel.app/api/auth/sendmessage', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
